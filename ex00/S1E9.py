@@ -11,7 +11,6 @@ can change the health state of the character with a method that passes is_alive 
     def __init__(self, first_name:str, is_alive:bool=True) -> None:
         self.first_name:str = first_name
         self.is_alive:str = is_alive
-        self.family_name:str = self.__class__.__name__
 
     @abstractmethod
     def die(self, is_alive:bool) -> None:
